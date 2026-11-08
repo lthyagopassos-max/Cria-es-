@@ -1,0 +1,30 @@
+{
+  "saida": "final.mp4",
+  "resolucao": [1920, 1080],
+  "fps": 30,
+  "cor": "",
+  "video": [
+    {"arquivo": "brutos/cam_a.mp4", "inicio": 12.4, "fim": 18.9, "cor": "quente"},
+    {"arquivo": "brutos/cam_a.mp4", "inicio": 21.0, "fim": 27.3, "cor": "quente", "zoom": 1.15},
+    {"imagem": "imagens/print.png", "duracao": 3, "zoom": [1.0, 1.1], "ajuste": "conter",
+     "transicao": {"tipo": "fade", "duracao": 0.4}},
+    {"arquivo": "brutos/cam_a.mp4", "inicio": 40.2, "fim": 52.0, "cor": "quente",
+     "transicao": {"tipo": "fade", "duracao": 0.4}}
+  ],
+  "overlays": [
+    {"arquivo": "brutos/broll_rua.mp4", "em": 8.0, "de": 3, "duracao": 2.5, "tela_cheia": true, "cor": "quente"},
+    {"arquivo": "motion/titulo.mov", "em": 0.3, "sfx": "sfx/impacto.wav", "sfx_volume": 0.5},
+    {"arquivo": "motion/lower.mov", "em": 2.0, "sfx": "sfx/whoosh-curto.wav", "sfx_volume": 0.3},
+    {"arquivo": "logo.png", "em": 0, "duracao": 25, "largura": 160, "x": "W-w-40", "y": 40}
+  ],
+  "legendas": {"arquivo": "legendas/final.srt", "estilo": "padrao"},
+  "musica": [
+    {"arquivo": "musica/trilha.mp3", "inicio": 0, "volume": 0.25, "ducking": true, "fade_in": 1, "fade_out": 3, "loop": true}
+  ],
+  "sfx": [
+    {"arquivo": "sfx/pop.wav", "em": 15.2, "volume": 0.4}
+  ],
+  "sfx_cortes": {"arquivo": "sfx/whoosh-curto.wav", "volume": 0.25, "antecipar": 0.12},
+  "loudness": -14,
+  "crf": 20
+}

@@ -36,11 +36,11 @@ ffmpeg -i video.mp4 -vf "subtitles=video.srt:force_style='FontName=Arial,FontSiz
 ```
 Estilo Reels/TikTok (grande, negrito, centro da tela) — use o SRT de palavras:
 ```bash
-ffmpeg -i video.mp4 -vf "subtitles=video.palavras.srt:force_style='FontName=Arial Black,FontSize=22,Bold=1,PrimaryColour=&H0000FFFF,OutlineColour=&H00000000,Outline=3,Alignment=5'" -c:a copy saida.mp4
+ffmpeg -i video.mp4 -vf "subtitles=video.palavras.srt:force_style='FontName=Arial Black,FontSize=22,Bold=1,PrimaryColour=&H0000FFFF,OutlineColour=&H00000000,Outline=3,Alignment=10'" -c:a copy saida.mp4
 ```
 Notas sobre `force_style`:
 - Cores em `&HAABBGGRR` (ordem BGR!): branco `&H00FFFFFF`, amarelo `&H0000FFFF`, verde `&H0000FF00`.
-- `Alignment`: 2 = embaixo centro, 5 = meio centro, 8 = topo centro.
+- `Alignment` (numeração SSA antiga, que o FFmpeg usa para SRT): 2 = embaixo centro, 10 = meio centro, 6 = topo centro (1/3 = embaixo esq./dir.).
 - `BorderStyle=3` cria caixa de fundo (use `BackColour=&H80000000` para preto semitransparente).
 - `FontSize` é relativo a uma tela de 288px de altura — ajuste visualmente.
 

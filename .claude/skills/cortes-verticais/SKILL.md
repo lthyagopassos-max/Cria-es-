@@ -22,7 +22,7 @@ Exporte sempre em 30 fps, H.264, `yuv420p`, AAC, `-movflags +faststart`.
    - duram 20–60 s.
    Apresente uma tabela ao usuário: `nº | início | fim | gancho (primeira frase) | por que funciona`.
 3. **Corte e reenquadre** com `scripts/vertical.sh` (abaixo).
-4. **Legende** cada corte (SRT de palavras da skill `legendas`, `Alignment=5`, acima da área inferior).
+4. **Legende** cada corte (SRT de palavras da skill `legendas`, `Alignment=10` (centro da tela), acima da área inferior).
 5. Entregue os arquivos em `cortes/` com nome `corte_01_<slug>.mp4` e uma legenda de post para cada.
 
 ## Modos de enquadramento (`scripts/vertical.sh`)
